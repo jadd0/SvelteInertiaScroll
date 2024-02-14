@@ -1,2 +1,2 @@
 
-export { default as SvelteInertiaScroll } from './IntertiaScroll.svelte';
+export { default as SvelteInertiaScroll } from './SvelteIntertiaScroll.svelte';
