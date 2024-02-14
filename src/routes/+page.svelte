@@ -33,7 +33,7 @@ function scroll() {
   // We only update the scroll position variables
   //sx = windowVar.pageXOffset;
   //sy = window.pageYOffset;
-  console.log(sx, sy)
+  console.log(dx, dy)
 }
 
 function getXOffset() {
@@ -49,6 +49,15 @@ function render() {
   // We calculate our container position by using our Linear Interpolation method.
 
   // And we loop again.
+
+  dx = lerp(dx, sx, 0.05);
+  dy = lerp(dy, sy, 0.05);
+  
+  dx = Math.floor(dx * 100) / 100;
+  dy = Math.floor(dy * 100) / 100;
+
+  //main.style = `translate: (-${dx}px, -${dy}px;`
+  //console.log(main.style)
   requestAnimationFrame(render);
 }
 
@@ -63,11 +72,11 @@ function lerp(a, b, n) {
 </script>
 
 
-<svelte:window on:scroll={scroll}  />
+<svelte:window on:scroll={scroll} bind:scrollY={sy} bind:scrollX={sx} />
 
-<body bind:this={body} bind:clientWidth={sx} bind:clientHeight={sy}>
+<body>
 
-  <main>
+  <main bind:this={main} style='transform: translate(-{dx}px, -{dy}px)'>
     <section class="section">
       <strong>1</strong>
     </section>
