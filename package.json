@@ -1,6 +1,6 @@
 {
-	"name": "smooth-scrolling",
-	"version": "0.0.1",
+	"name": "svelteinertiascroll",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",

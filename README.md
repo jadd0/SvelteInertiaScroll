@@ -1,38 +1,34 @@
-# create-svelte
+## Svelte Inertia Scrolling:
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Every website now-a-days uses this simple feature to make the scrolling movement appear 'glossy'. By using this package you can easily reproduce what some web developers get paid 6 figures for!
 
-## Creating a project
+### [Live Demo](svelteinertiascroll.jadd.live)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## How to use:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Download the package with:
 
-# create a new project in my-app
-npm create svelte@latest my-app
+```terminal
+npm i SvelteInertiaScroll
 ```
 
-## Developing
+Next, import it into the file you desire with:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```javascript
+import SvelteInertiaScroll from 'SvelteInertiaScroll'
 ```
 
-## Building
+And finally, wrap your body/main tag with it like so:
 
-To create a production version of your app:
-
-```bash
-npm run build
+```svelte
+<SvelteInertiaScroll>
+  <body>
+    <h1>Hello World!</h1>
+  </body>
+</SvelteInertiaScroll>
 ```
 
-You can preview the production build with `npm run preview`.
+And you are done!
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Thank you so much for using my package :)
+
