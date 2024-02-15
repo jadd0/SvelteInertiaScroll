@@ -2,7 +2,7 @@
 
 Every website now-a-days uses this simple feature to make the scrolling movement appear 'glossy'. By using this package you can easily reproduce what some web developers get paid 6 figures for!
 
-### [Live Demo](svelteinertiascroll.jadd.live)
+### [Live Demo](https://svelteinertiascroll.jadd.live)
 
 ## How to use:
 
